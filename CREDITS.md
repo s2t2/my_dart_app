@@ -96,3 +96,8 @@
   + https://flutter.dev/docs/development/tools/devtools/cli
   + https://flutter.dev/docs/development/tools/devtools/debugger
   + VS Code Command Pallette: "Dart: New Project" .... needs stagehand. `pub global activate stagehand`
+  + https://pub.dev/packages/stagehand
+  + https://github.com/dart-lang/stagehand
+  + [Installing dart via Homebrew](https://dart.dev/get-dart): `brew tap dart-lang/dart` and `brew install dart`
+  + Running the script: `dart bin/main.dart`
+  + Scripts go in the bin/ dir. Imports / modules go in the lib/ dir.
