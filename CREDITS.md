@@ -101,3 +101,84 @@
   + [Installing dart via Homebrew](https://dart.dev/get-dart): `brew tap dart-lang/dart` and `brew install dart`
   + Running the script: `dart bin/main.dart`
   + Scripts go in the bin/ dir. Imports / modules go in the lib/ dir.
+  + https://stackoverflow.com/questions/32108457/whats-the-difference-between-pub-dependencies-and-dev-dependencies
+  + https://dart.dev/tools/pub/dependencies#dev-dependencies
+  + https://dart.dev/tools/pub/pubspec
+  + https://docs.travis-ci.com/user/languages/dart
+
+### Debugging
+
+
+```dart
+import "dart:developer";
+
+main() {
+
+  var x = 1;
+  print("X: ${x}");
+
+  var y = 2;
+  debugger();
+  print("Y: ${y}");
+
+}
+```
+
+```sh
+dart --observe bin/main.dart # then go visit the URL
+```
+
+Not able to interact...
+
+
+
+```
+Debugging isolate isolate 868979621 'main'
+Type 'h' for help
+Paused at main.dart:22:18
+$ y
+No such command: 'y'
+$ h
+List of commands:
+
+break        - Add a breakpoint by source location or function name (hotkey: [F8])
+clear        - Remove a breakpoint by source location or function name (hotkey: [F8])
+cls          - Clear the console
+continue, c  - Resume execution of the isolate (hotkey: [F7])
+delete       - Remove a breakpoint by breakpoint id
+down         - Move down one or more frames (hotkey: [Page Down])
+finish       - Continue running the isolate until the current function exits
+frame, f     - Set the current frame
+help         - List commands or provide details about a specific command
+info         - Show information on a variety of topics
+isolate, i   - Switch, list, rename, or reload isolates
+log          - Control which log messages are displayed
+next, n      - Continue running the isolate until it reaches the next source location in the current function (hotkey: [F9])
+next-async   - Step over await or yield
+next-sync    - Run until return/unwind to current activation.
+pause        - Pause the isolate (hotkey: [Ctrl ;])
+print, p     - Evaluate and print an expression in the current frame
+refresh      - Refresh debugging information of various sorts
+reload       - Reload the sources for the current isolate
+rewind       - Rewind the stack to a previous frame
+set          - Set a debugger option
+step, s      - Continue running the isolate until it reaches the next source location (hotkey: [F10]
+up           - Move up one or more frames (hotkey: [Page Up])
+vm           - Manage a Dart virtual machine
+
+For more information on a specific command type 'help <command>'
+For a list of hotkeys type 'help hotkeys'
+
+Command prefixes are accepted (e.g. 'h' for 'help')
+Hit [TAB] to complete a command (try 'is[TAB][TAB]')
+Hit [ENTER] to repeat the last command
+Use up/down arrow for command history
+
+$ print(y)
+No such command: 'print(y)'
+$ p(y)
+No such command: 'p(y)'
+$ next
+Continuing...
+Paused at main.dart:22:3
+```

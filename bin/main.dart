@@ -1,4 +1,6 @@
-import 'package:my_dart_app/my_dart_app.dart' as my_dart_app;
+import "dart:developer";
+
+import "package:my_dart_app/my_dart_app.dart" as my_dart_app;
 
 main() {
 
@@ -11,10 +13,24 @@ main() {
   print(listOfNums()[0].toString());
 
   print(listOfObjs()[0]["a"]);
+
+  var x = 1;
+  print("X: ${x}");
+
+  var y = 2;
+  debugger();
+  print("Y: ${y}");
+
+  print(finalFunc());
+
 }
 
 anotherFunc(){
   return "ANOTHER FUNCTION";
+}
+
+finalFunc(){
+  return "FINAL FUNCTION";
 }
 
 listOfNums(){
