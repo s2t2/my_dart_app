@@ -15,6 +15,9 @@ class User {
   // METHODS
   //
 
+  String fullName() {
+    return "${this.firstName} ${this.lastName}";
+  }
 
   //
   // CONSTRUCTOR(S)
