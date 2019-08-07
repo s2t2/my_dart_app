@@ -1,14 +1,36 @@
 
 class User {
 
+  //
   // ATTRIBUTES
+  //
 
-  String firstName = "First";
-  String lastName = "Last";
-  List<String> favFlavors = ["vanilla", "chocolate", "strawberry"];
-  Map prefs = {"audio": true, "notifications": false};
+  String username;
+  String firstName;
+  String lastName;
+  List<String> favFlavors;
+  Map prefs = {"audio": true, "notifications": false}; // default vals
 
+  //
   // METHODS
+  //
 
+
+  //
+  // CONSTRUCTOR(S)
+  //
+
+  // this is the main constructor which allows you to pass arguments in when initializing
+  // needs at
+  User(this.username, {this.firstName, this.lastName, this.favFlavors, this.prefs});
+
+  // this is a named constructor ... example: `u = User.mock`
+  User.mock() {
+    username = "mm123";
+    firstName = "Mollie";
+    lastName = "Marshal";
+    favFlavors = ["mocha", "vanilla"];
+    prefs = {"audio": false, "notifications": false};
+  }
 
 }

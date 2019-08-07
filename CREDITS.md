@@ -199,3 +199,5 @@ class class_name {
 ```
 
   + https://www.w3adda.com/dart-tutorial/dart-classes
+  + https://dart.dev/guides/language/language-tour#instance-variables
+  + https://stackoverflow.com/a/55769496/670433
