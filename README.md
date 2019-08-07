@@ -45,6 +45,14 @@ Try different debugging methods:
 ```sh
 dart bin/debugging.dart
 ```
+
+Instantiating a class:
+
+```sh
+dart bin/classes.dart
+```
+
+
 ## Testing
 
 ```sh
