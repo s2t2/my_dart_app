@@ -40,6 +40,11 @@ Running the main script:
 dart bin/main.dart
 ```
 
+Try different debugging methods:
+
+```sh
+dart bin/debugging.dart
+```
 ## Testing
 
 ```sh

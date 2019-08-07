@@ -1,5 +1,3 @@
-import "dart:developer";
-
 import "package:my_dart_app/my_dart_app.dart" as my_dart_app;
 
 main() {
@@ -18,7 +16,6 @@ main() {
   print("X: ${x}");
 
   var y = 2;
-  debugger();
   print("Y: ${y}");
 
   print(finalFunc());

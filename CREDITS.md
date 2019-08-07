@@ -182,3 +182,18 @@ $ next
 Continuing...
 Paused at main.dart:22:3
 ```
+
+
+### Classes
+
+  + https://dart.dev/guides/language/language-tour#classes
+  + https://www.tutorialspoint.com/dart_programming/dart_programming_classes
+
+``` dart
+class class_name {
+   <fields>
+   <getters/setters>
+   <constructors>
+   <functions>
+}
+```
