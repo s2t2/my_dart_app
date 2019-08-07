@@ -5,22 +5,19 @@ main() {
   var u = new User("jj987");
   u.firstName = "Jane";
   u.lastName = "Jones";
-  print("------");
-  print("FIRST: " + u.firstName);
-  print("LAST: " + u.lastName);
-  print("FULL: " + u.fullName());
 
-  var y = new User("jj456", firstName:"John", lastName:"Jones");
-  print("------");
-  print("FIRST: " + y.firstName);
-  print("LAST: " + y.lastName);
-  print("FULL: " + y.fullName());
+  var y = new User("jj456", firstName: "John", lastName: "Jones");
 
   var m = User.mock();
-  print("------");
-  print("FIRST: " + m.firstName);
-  print("LAST: " + m.lastName);
-  print("FULL: " + m.fullName());
-  print(m.speakUp("Hello World"));
 
+  for (var user in [u, y, m]) {
+
+    print("------");
+    print("IS PERSON? " + (user is User).toString());
+    print("FIRST: " + user.firstName);
+    print("LAST: " + user.lastName);
+    print("FULL: " + user.fullName());
+    print(user.speakUp("Hello World"));
+
+  }
 }
