@@ -201,3 +201,10 @@ class class_name {
   + https://www.w3adda.com/dart-tutorial/dart-classes
   + https://dart.dev/guides/language/language-tour#instance-variables
   + https://stackoverflow.com/a/55769496/670433
+  + https://stackoverflow.com/a/54346031/670433
+
+### The `http` Package
+
+  + https://pub.dev/packages/http
+  + https://github.com/dart-lang/http
+  + https://pub.dev/documentation/http/latest/
