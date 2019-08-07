@@ -21,5 +21,6 @@ main() {
   print("FIRST: " + m.firstName);
   print("LAST: " + m.lastName);
   print("FULL: " + m.fullName());
+  print(m.speakUp("Hello World"));
 
 }

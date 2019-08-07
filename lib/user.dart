@@ -5,9 +5,10 @@ class User {
   // ATTRIBUTES
   //
 
-  String username;
-  String firstName;
-  String lastName;
+  //String username;
+  //String firstName;
+  //String lastName;
+  String username, firstName, lastName;
   List<String> favFlavors;
   Map prefs = {"audio": true, "notifications": false}; // default vals
 
@@ -17,6 +18,10 @@ class User {
 
   String fullName() {
     return "${this.firstName} ${this.lastName}";
+  }
+
+  String speakUp(String message) {
+    return "${this.firstName} ${this.lastName} says, '${message}'";
   }
 
   //
