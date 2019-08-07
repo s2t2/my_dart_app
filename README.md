@@ -52,6 +52,12 @@ Instantiating a class:
 dart bin/classes.dart
 ```
 
+Issuing HTTP requests:
+
+```sh
+dart bin/requests.dart
+```
+
 
 ## Testing
 

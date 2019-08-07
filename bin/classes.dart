@@ -13,7 +13,8 @@ main() {
   for (var user in [u, y, m]) {
 
     print("------");
-    print("IS PERSON? " + (user is User).toString());
+    print("DATA TYPE: " + user.runtimeType.toString()); // use x.runtimeType to detect datatype
+    print("IS USER? " + (user is User).toString());
     print("FIRST: " + user.firstName);
     print("LAST: " + user.lastName);
     print("FULL: " + user.fullName());
